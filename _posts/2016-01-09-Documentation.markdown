@@ -1,4 +1,5 @@
-# Chaplin
+---
+---
 
 ### Installation
 
@@ -18,17 +19,19 @@ Change other variables under *User Settings* in `_config.yml` as you see fit.
 
 ### Usage
 
-* To change the font for the heading, change the `$heading-font` variable in `_sass/_vars.scss`
+* To change the font for the heading, change the `heading_font` variable in `_config.yml`
 
 * To create a new post, simply save the `.markdown` file in the `_posts` directory in the format.
 
-```
+{% highlight text %}
 year-month-day-name-of-the-file.markdown
-```
+{% endhighlight %}
 
 * For Syntax highlighting, Chaplin uses *Rouge* which is the default highlighter in Jekyll 3 and above. If you don't know how to highlight a code block, [refer](http://jekyllrb.com/docs/templates/).
 
 * To set up Google Analytics tracking id, just set the `tracking_id` variable in `_config.yml`. You also need to set `google_analytics` to `true`
+
+* To use Disqus for Comments, copy the *universal code* from disqus' website, and copy it in `_includes/disqus.html`.
 
 ---
 
