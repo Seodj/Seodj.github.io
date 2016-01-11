@@ -1,13 +1,10 @@
 ---
 layout: about
 title: About
-author: Charlie
+author: Seodj
 permalink: /about/
 ---
 
-Hi! My name is <span class="highlight-span">Charlie</span>!
+Hi! My name is <span class="highlight-span">Seodj</span>!
 
-> We think too much and feel too little.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.
+> 반갑습니다! 서동진 블로그입니다.
