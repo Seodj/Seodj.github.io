@@ -29,6 +29,7 @@ tracking_id: UA-69243698-5
 
 # Build settings | Do not edit anything below this
 markdown: kramdown
+encoding: utf-8
 
 gems:
   - jekyll-paginate
