@@ -7,4 +7,4 @@ permalink: /about/
 
 Hi! My name is <span class="highlight-span">Seodj</span>!
 
-> ¹İ°©½À´Ï´Ù! ¼­µ¿Áø ºí·Î±×ÀÔ´Ï´Ù.
+> ì„œë™ì§„ì…ë‹ˆë‹¤.
