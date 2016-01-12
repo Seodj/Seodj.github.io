@@ -1,10 +1,9 @@
 ---
 layout: about
 title: About
-author: Seodj
+author: 서동진
 permalink: /about/
 ---
 
-Hi! My name is <span class="highlight-span">Seodj</span>!
 
-> 서동진입니다.
+> 안녕하세요. 백발 개발자를 꿈꾸는 <span class="highlight-span">서동진</span>!입니다.
