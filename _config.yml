@@ -7,10 +7,9 @@ author: Seodj
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to Seodj's blog
 
-url: "http://bk2dcradle.gitub.io" # the base hostname & protocol for your site
+url: "http://seodj.gitub.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: AnkitSultana
-github_username:  bk2dcradle
+github_username:  seodj
 
 permalink:          /:year/:title.html
 
