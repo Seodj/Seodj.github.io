@@ -128,13 +128,13 @@ Hitimes 삭제 후 다시 설치
 
 
 
-##6. 제킬 블로그 생성하기
+##6. jekyll 블로그 생성하기
 $jekyll new github아이디.github.io
 Blog 디렉토리로 이동 후, _config.yml 파일에 밑에 설정 추가
 encoding: utf-8
 highlighter: rouge
 highlighter: pygments
-다시 제킬 실행
+다시 jekyll 실행
  
 ![jekyll_error]({{ site.url }}/assets/jekyll_error.jpg)
 
@@ -181,3 +181,9 @@ $git push –u origin master
 
 이후 본인 블로그 주소로 접속!
 https://본인아이디.github.io 입력해서 정상적으로 나오면 성공!
+
+
+##8. 블로그 꾸미기
+
+http://jekyllthemes.org/
+에서 무료 themes를 배포하니 여기서 다운받아서 적용하면 됩니다!
