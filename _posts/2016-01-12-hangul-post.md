@@ -130,7 +130,7 @@ Hitimes 삭제 후 다시 설치
 
 
 
-##6. jekyll 블로그 생성하기
+##7. jekyll 블로그 생성하기
 $jekyll new github아이디.github.io
 Blog 디렉토리로 이동 후, _config.yml 파일에 밑에 설정 추가
 
@@ -167,7 +167,7 @@ http://127.0.0.1:4000/
 ![jekyll_success]({{ site.url }}/assets/jekyll_success.jpg)
 
 
-##7. git 설치
+##8. git 설치
 http://git-scm.com/download/win
 github에서 레퍼지토리 새로 생성
 
@@ -189,7 +189,7 @@ $git push –u origin master
 https://본인아이디.github.io 입력해서 정상적으로 나오면 성공!
 
 
-##8. 블로그 꾸미기
+##9. 블로그 꾸미기
 
 http://jekyllthemes.org/
 에서 무료 themes를 배포하니 여기서 다운받아서 적용하면 됩니다!
