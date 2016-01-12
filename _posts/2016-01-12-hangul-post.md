@@ -18,7 +18,7 @@ http://rubyinstaller.org/downloads/
 
 ##2. development kit 설치
 
-http://rubyinstaller.org/downloads/
+http://rubyinstaller.org/downloads/  
 편한 위치에 설치 후, 층로 디렉토리 이동
 
 Devkit을 사용하게 초기화 해야합니다. 윈도우 CMD 창에서 아래 명령으로 초기화와 Ruby 와 Binding 을 해줍니다.
@@ -62,7 +62,8 @@ $gem install rouge
 
 ##4. 파이썬 설치
 https://www.python.org/downloads/  
-파이썬은 2.x 버전을 추천합니다. 3.x는 뒤에서 에러발생..    
+파이썬은 2.x 버전을 추천합니다. 3.x는 뒤에서 에러발생..
+
 환경변수 path에 C:\Python27 경로 추가   
 추가로 C:\Python27\Scripts 도 추가!  
 즉 path에 C:\Python27;C:\Python27\Scripts  
@@ -83,6 +84,7 @@ $pip install Pygments
 {% endhighlight %}
 윈도우 계정이 한글로 되어있으면 오류 발생할 수 있습니다.  
 
+
 ##6. Jekyll 실행
 원하는 디렉토리 하나 생성 후
 
@@ -100,7 +102,7 @@ $gem install wdm
 
 으로 wdm 설치!
 
-다시 jekyll을 실행하면 정상 실행!
+다시 jekyll을 실행하면 정상 실행!  
 실행시키고 브라우져에 127.0.0.1:4000 입력.
 
 만약 Jekyll 서버 실행 시 다음과 같은 에러 발생한다면,
@@ -131,9 +133,13 @@ Hitimes 삭제 후 다시 설치
 ##6. jekyll 블로그 생성하기
 $jekyll new github아이디.github.io
 Blog 디렉토리로 이동 후, _config.yml 파일에 밑에 설정 추가
+
+{% highlight ruby %}
 encoding: utf-8
 highlighter: rouge
 highlighter: pygments
+{% endhighlight %}
+
 다시 jekyll 실행
  
 ![jekyll_error]({{ site.url }}/assets/jekyll_error.jpg)
