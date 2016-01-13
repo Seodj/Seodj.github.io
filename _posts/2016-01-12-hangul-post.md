@@ -48,7 +48,7 @@ $ruby dk.rb install
 ##3. 지킬 설치
 
 {% highlight ruby %}
-$gem install Jekyll
+$gem install jekyll
 {% endhighlight %}
 
 지킬 설치 완료!
@@ -121,7 +121,7 @@ times.rb:37:in rescue in <top (required)>'
 {% highlight ruby %}
 $gem uni hitimes
 $Remove ALL versions
-$gem ins hitimes -v 1.2.1 --platform ruby
+$gem install hitimes -v 1.2.1 --platform ruby
 {% endhighlight %}
 
 Hitimes 삭제 후 다시 설치
