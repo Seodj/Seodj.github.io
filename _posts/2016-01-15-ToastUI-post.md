@@ -69,7 +69,7 @@ $bower install tui-code-snippet
 
 
 위에 코드와 같이 적용해보면 다음 사진과 같은 결과를 얻을 수 있다.
-![calendar image]({{ site.url }}/assets/calendar.jpg)
+![calendar image]({{ site.url }}/assets/calendar.JPG)
 
 [^※주의할 점은 github 설명에 CodeSnippet은 기본적으로 ne.util을 네임스페이스로 가진다고 했는데, ne.util이 아니라 tui.util로 변경된 것이 문서에는 적용이 되지 않았습니다. 밑에 ne.component.Calendar("#layer"); 가 아니라 tui.component로 작성해주세요!]
 
