@@ -25,9 +25,3 @@ profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
 물론 쉽진 않고 다양한 예외 상황이 발생하겠지만, 당장 다음주부터 시작할 개발이 기대된다.
 
 같은 조에 비해 많이 부족하지만 2달간의 개발 교육이 끝나 있을 때는 실력이 어마어마하게 상승해있도록 염심히 해야겠다! 무한 야근!
-
-{% highlight ruby %}
-$cd C:\RubyDevkit  
-$ruby dk.rb init  
-$ruby dk.rb install
-{% endhighlight %}
