@@ -16,14 +16,15 @@ profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
 
 어떤 컨셉의 투표 서비스를 만들지 고민하면서 기획이 정말 머리가 어렵고, 생각할 것이 많은 어려운 업무라고 느꼈다.
 
+화이트보드에 그려가면 투표 서비스에 대하여 다양한 의견을 제시하고 2주간의 개발 기획이 완성되었다. 
 
+우리 투표 서비스의 이름은 바로 OneQ 이다. One Question, Open Question 이라는 뜻으로, Youtube처럼 투표 창과 투표 결과창을
 
-##2. development kit 설치
+공유할 수 있는 기능이 가장 핵심 기능이다.
 
-http://rubyinstaller.org/downloads/  
-편한 위치에 설치 후, 층로 디렉토리 이동
+물론 쉽진 않고 다양한 예외 상황이 발생하겠지만, 당장 다음주부터 시작할 개발이 기대된다.
 
-Devkit을 사용하게 초기화 해야합니다. 윈도우 CMD 창에서 아래 명령으로 초기화와 Ruby 와 Binding 을 해줍니다.
+같은 조에 비해 많이 부족하지만 2달간의 개발 교육이 끝나 있을 때는 실력이 어마어마하게 상승해있도록 염심히 해야겠다! 무한 야근!
 
 {% highlight ruby %}
 $cd C:\RubyDevkit  
