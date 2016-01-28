@@ -11,9 +11,9 @@ profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
 trigger 단어는 방아쇠라는 뜻을 가진다.
 
 그럼 데이터베이스에서 trigger는 무슨 뜻일까?
-{% highlight ruby %}
-데이터베이스 트리거(Database Trigger)는 테이블에 대한 이벤트에 반응해 자동으로 실행되는 작업을 의미한다. 트리거는 데이터 조작 언어(DML)의 데이터 상태의 관리를 자동화하는 데 사용된다. 트리거를 사용하여 데이터 작업 제한, 작업 기록, 변경 작업 감사 등을 할 수 있다.
-{% endhighlight %}
+
+### 데이터베이스 트리거(Database Trigger)는 테이블에 대한 이벤트에 반응해 자동으로 실행되는 작업을 의미한다. 트리거는 데이터 조작 언어(DML)의 데이터 상태의 관리를 자동화하는 데 사용된다. 트리거를 사용하여 데이터 작업 제한, 작업 기록, 변경 작업 감사 등을 할 수 있다.
+
 
 테이블에 대한 이벤트에 따라 원하는 작업을 추가할 수 있다!
 
