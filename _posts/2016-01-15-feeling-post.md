@@ -1,10 +1,10 @@
 ---
+layout: post
 title: 기술교육 1주동안
-author: 서동진
-profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
-
+categories: [general]
+tags: [NHN ent]
+description: 기술교육 1주동안
 ---
-
 
 ##루키햇님TF 5조
 

@@ -1,8 +1,9 @@
 ---
+layout: post
 title: jekyll로 블로그 만들기!
-author: 서동진
-profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
-
+categories: [general]
+tags: [jekyll]
+description: jekyll로 블로그 만들기!
 ---
 
 
@@ -23,7 +24,7 @@ http://rubyinstaller.org/downloads/
 
 Devkit을 사용하게 초기화 해야합니다. 윈도우 CMD 창에서 아래 명령으로 초기화와 Ruby 와 Binding 을 해줍니다.
 
-{% highlight ruby %}
+{% highlight yaml %}
 $cd C:\RubyDevkit  
 $ruby dk.rb init  
 $ruby dk.rb install
@@ -47,13 +48,13 @@ $ruby dk.rb install
 
 ##3. 지킬 설치
 
-{% highlight ruby %}
+{% highlight yaml %}
 $gem install jekyll
 {% endhighlight %}
 
 지킬 설치 완료!
 
-{% highlight ruby %}
+{% highlight yaml %}
 $gem install rouge
 {% endhighlight %}
 
@@ -69,7 +70,7 @@ https://www.python.org/downloads/
 즉 path에 C:\Python27;C:\Python27\Scripts  
 이렇게 추가!  
 
-{% highlight ruby %}
+{% highlight yaml %}
 $python 
 {% endhighlight %}
 
@@ -79,7 +80,7 @@ Pip는 파이썬 설치할 때 자동으로 설치됨
 
 
 ##5. Pygments 설치  
-{% highlight ruby %}
+{% highlight yaml %}
 $pip install Pygments
 {% endhighlight %}
 윈도우 계정이 한글로 되어있으면 오류 발생할 수 있습니다.  
@@ -88,7 +89,7 @@ $pip install Pygments
 ##6. Jekyll 실행
 원하는 디렉토리 하나 생성 후
 
-{% highlight ruby %}
+{% highlight yaml %}
 $jekyll serve 
 {% endhighlight %}
 
@@ -96,7 +97,7 @@ $jekyll serve
  
 Jekyll가 실행되지만 wdm 설치하라고 나옵니다.
 
-{% highlight ruby %}
+{% highlight yaml %}
 $gem install wdm 
 {% endhighlight %}
 
@@ -107,7 +108,7 @@ $gem install wdm
 
 만약 Jekyll 서버 실행 시 다음과 같은 에러 발생한다면,
 
-{% highlight ruby %}
+{% highlight yaml %}
 C:/Ruby22/lib/ruby/2.2.0/rubygems/coreext/kernelrequire.rb:54:in require': ca
 nnot load such file -- hitimes/hitimes (LoadError)
         from C:/Ruby22/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:54:in
@@ -118,7 +119,7 @@ times.rb:37:in rescue in <top (required)>'
 {% endhighlight %}
 
 
-{% highlight ruby %}
+{% highlight yaml %}
 $gem uni hitimes
 $Remove ALL versions
 $gem install hitimes -v 1.2.1 --platform ruby
@@ -134,7 +135,7 @@ Hitimes 삭제 후 다시 설치
 $jekyll new github아이디.github.io
 Blog 디렉토리로 이동 후, _config.yml 파일에 밑에 설정 추가
 
-{% highlight ruby %}
+{% highlight yaml %}
 encoding: utf-8
 highlighter: rouge
 highlighter: pygments
@@ -147,7 +148,7 @@ highlighter: pygments
 
 위에 오류 발생 시, 아래 명령어로 설치
 
-{% highlight ruby %}
+{% highlight yaml %}
 $gem install pygments.rb
 {% endhighlight %}
 
@@ -155,7 +156,7 @@ $gem install pygments.rb
 
  
 위 에러 시 pygments를 재설치 해본다.
-{% highlight ruby %}
+{% highlight yaml %}
 $gem uninstall pygments.rb
 $gem install pygments.rb --version "=0.5.0"
 {% endhighlight %}
@@ -175,7 +176,7 @@ github에서 레퍼지토리 새로 생성
 
 git 설치하고 본인이 만든 C:\jekyll\github아이디.github.io 디렉토리 이동 후,
 
-{% highlight ruby %}
+{% highlight yaml %}
 $git init
 $git remote add origin https://github.com/본인아이디/본인아이디.github.io.git
 $git config –global user.email “본인이메일”

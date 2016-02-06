@@ -1,8 +1,9 @@
 ---
+layout: post
 title: Spring 프로젝트 테스트 코드.
-author: 서동진
-profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
-
+categories: [TDD]
+tags: [spring],[tdd]
+description: Spring 프로젝트 테스트 코드.
 ---
 
 # 단위 테스트란?
@@ -20,7 +21,7 @@ profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
 
 테스트 전 Maven pom.xml에서 junit, mokito, spring-test 라이브러리를 추가해줍니다.
 
-{% highlight ruby %}
+{% highlight yaml %}
 <!-- Test -->
         <dependency>
             <groupId>junit</groupId>
@@ -59,7 +60,7 @@ Service는 Controller에 의해 비지니스 로직을 수행합니다. 여러 D
 비지니스 로직을 수행할 때, Dao를 쓰게 된다면, 테스트용 내장 데이터베이스를 쓰거나 when문으로 Dao에서 호출하는 함수 값을 임의로 지정하고 진행 할 수 있습니다.
 테스트를 실행시킬 때마다 DB를 바꿔야 한다면, pom.xml 파일에서 build태그 안에 다음을 추가시켜 주면 된다.
 
-{% highlight ruby %}
+{% highlight yaml %}
 <testResources>
 	<testResource>
 		<directory>src/test/resources</directory>
@@ -69,7 +70,7 @@ Service는 Controller에 의해 비지니스 로직을 수행합니다. 여러 D
 
 그리고 테스트 하는 클래스 위에 
 
-{% highlight ruby %}
+{% highlight yaml %}
 @RunWith(MockitoJUnitRunner.class)
 @ContextHierarchy({
     @ContextConfiguration("/spring/application-context.xml"),
@@ -82,7 +83,7 @@ public class QuestionServiceTest {
 
 다음을 추가 시켜주면, src/test/resources 위치에서 /spring/application.context.xml을 로딩하게 된다. 저 디렉토리 위치에 테스트용 디비 설정을 적어두면 매번 디비 설정을 바꿀 필요 없다. 디비를 분리하는 이유는 오늘 성공한 테스트가 내일 성공할 거라는 보장이 없습니다. 데이터가 바뀌게 되면 테스트가 실패할 수도 있기 때문에 테스트용 디비를 따로 구축하는 것이 좋습니다.
 
-{% highlight ruby %}
+{% highlight yaml %}
 @RunWith(MockitoJUnitRunner.class)
 public class QuestionServiceTest {
 	@Mock
@@ -110,7 +111,7 @@ public class QuestionServiceTest {
 
 # 3. Dao
 
-{% highlight ruby %}
+{% highlight yaml %}
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextHierarchy({
     @ContextConfigurat
@@ -142,7 +143,7 @@ public class QuestionDaoTest {
 Dao 테스트는 디비에서 select, update, insert 등 데이터가 바뀌게 되므로, 항상 테스트 이후에 rollback 설정을 걸어주는 것이 좋다.
 위에 코드와 같이 
 
-{% highlight ruby %}
+{% highlight yaml %}
 @Transactional
 @TransactionConfiguration(defaultRollback=true)
 public class QuestionDaoTest {

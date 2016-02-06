@@ -1,8 +1,9 @@
 ---
+layout: post
 title: window에서 Toast UI 컴포넌트 설치하기
-author: 서동진
-profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
-
+categories: [TUI]
+tags: [NHN ent]
+description: window에서 Toast UI 컴포넌트 설치하기
 ---
 
 
@@ -10,7 +11,7 @@ profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
 
 https://nodejs.org/ 
 
-{% highlight ruby %}
+{% highlight yaml %}
 $node -v
 {% endhighlight %}
 
@@ -19,13 +20,13 @@ cmd창에 $node 명령어가 실행되면 설치 완료.
 
 ##2. bower 설치
 
-{% highlight ruby %}
+{% highlight yaml %}
 $npm i --global bower
 {% endhighlight %}
 
 npm 명령어로 간단하게 bower 설치 완료.
 
-{% highlight ruby %}
+{% highlight yaml %}
 $bower -v
 {% endhighlight %}
 
@@ -39,7 +40,7 @@ https://github.com/nhnent/tui.code-snippet
 첫 번째 방법으로 github에서 다운받아 사용 가능하다.
 
 
-{% highlight ruby %}
+{% highlight yaml %}
 $bower install tui-code-snippet
 {% endhighlight %}
 
@@ -49,7 +50,7 @@ $bower install tui-code-snippet
 
 ##4. 적용 테스트
 
-{% highlight ruby %}
+{% highlight yaml %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -73,6 +74,6 @@ $bower install tui-code-snippet
 
 ## ※주의할 점은 github 설명에 CodeSnippet은 기본적으로 ne.util을 네임스페이스로 가진다고 했는데, ne.util이 아니라 tui.util로 변경된 것이 문서에는 적용이 되지 않았습니다. 밑에 ne.component.Calendar("#layer"); 가 아니라 tui.component로 작성해주세요!
 
-{% highlight ruby %}
+{% highlight yaml %}
 var calendar = new tui.component.Calendar("#layer");
 {% endhighlight %}

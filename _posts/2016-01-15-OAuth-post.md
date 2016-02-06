@@ -1,10 +1,10 @@
 ---
+layout: post
 title: OAuth에 관하여
-author: 서동진
-profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
-
+categories: [OAuth]
+tags: [NHN ent]
+description: OAuth에 관하여
 ---
-
 
 ##1. OAuth
 
@@ -35,7 +35,7 @@ OAuth는 2번인 권한 부여 의미 조금 더 맞다.
 
 
 
-{% highlight ruby %}
+{% highlight yaml %}
 OAuth 작성 중
 {% endhighlight %}
 

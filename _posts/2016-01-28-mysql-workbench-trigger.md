@@ -1,8 +1,9 @@
 ---
+layout: post
 title: mysql workbench로 trigger 생성해보기
-author: 서동진
-profile_picture: http://www.famousbirthdays.com/faces/laurel-stan-image.jpg
-
+categories: [Database]
+tags: [trigger]
+description: mysql workbench로 trigger 생성해보기
 ---
 
 
@@ -30,7 +31,7 @@ trigger 단어는 방아쇠라는 뜻을 가진다.
 다음과 같이 어떤 이벤트에 트리거를 추가할지 선택한다.
 before과 after은 이벤트가 일어나기 전과 후 차이이다.
 
-{% highlight ruby %}
+{% highlight yaml %}
 CREATE DEFINER=`root`@`localhost` TRIGGER `db_oneq`.`tb_question_BEFORE_UPDATE` BEFORE UPDATE ON `tb_question` FOR EACH ROW
 BEGIN
     IF OLD.vote_limit <= NEW.vote_num
