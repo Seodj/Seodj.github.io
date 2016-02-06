@@ -2,7 +2,7 @@
 layout: post
 title: Spring 프로젝트 테스트 코드.
 categories: [TDD]
-tags: [spring],[tdd]
+tags: [spring, tdd]
 description: Spring 프로젝트 테스트 코드.
 ---
 
