@@ -21,12 +21,12 @@ trigger 단어는 방아쇠라는 뜻을 가진다.
 
 ##2. workbench에서 trigger 추가하기
 
-![trigger image]({{ site.url }}/assets/trigger.jpg)
+![trigger image]({{ site.BASE_PATH }}/assets/post/2016-01-28/trigger.jpg)
 
 위에 사진처럼 원하는 트리거를 추가하고 싶은 테이블을 선택하여 alter table을 선택한다.
 항목에서 trigger을 선택하여
 
-![trigger image2]({{ site.url }}/assets/trigger2.jpg)
+![trigger image2]({{ site.BASE_PATH }}/assets/post/2016-01-28/trigger2.jpg)
 
 다음과 같이 어떤 이벤트에 트리거를 추가할지 선택한다.
 before과 after은 이벤트가 일어나기 전과 후 차이이다.

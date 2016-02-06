@@ -1,9 +1,9 @@
 ---
 layout: post
-title: mokito를 이용한 테스트 작성.
+title: private method 테스트 방법!
 categories: [TDD]
 tags: [powermock]
-description: mokito를 이용한 테스트 작성.
+description: powerMock 소개
 ---
 
 ## PowerMock
@@ -12,10 +12,10 @@ description: mokito를 이용한 테스트 작성.
 검색을 해보았는데, 리플렉션을 이용할 수도 있었으나 powerMock라는 좋은 라이브러리가 있어서 자료 공유합니다.
 
 
-<a class="btn btn-default" href="https://github.com/jayway/powermock">PowerMock github< dependency</a>
+<a class="btn btn-default" href="https://github.com/jayway/powermock">PowerMock github</a>
 여기는 powermock github 주소입니다.
 
-<a class="btn btn-default" href="http://mvnrepository.com/artifact/org.powermock/powermock-module-junit4">PowerMock< dependency</a>
+<a class="btn btn-default" href="http://mvnrepository.com/artifact/org.powermock/powermock-module-junit4">PowerMock</a>
 
 여기에 보시면 depedency 정보가 버전에 따라 있습니다.
 
