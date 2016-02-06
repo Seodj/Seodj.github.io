@@ -3,7 +3,7 @@ layout: post
 title: jekyll로 블로그 만들기!
 categories: [general]
 tags: [jekyll]
-description: jekyll로 블로그 만들기!
+description: jekyll 만드는 방법에 대해서 처음부터 상세하게 소개합니다.
 ---
 
 

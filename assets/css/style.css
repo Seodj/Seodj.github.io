@@ -187,6 +187,7 @@ ul.dropdown-menu>li>a>i.fa {
 article.home h1 a, article.home h2 a, article.home h3 a, article.home h4 a{
 	font-family: -webkit-body;
 	color: black;
+	font-weight: bold;
 }
 
 article.home h1 a:hover, article.home h2 a:hover, article.home h3 a:hover, article.home h4 a:hover{

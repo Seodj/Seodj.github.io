@@ -3,7 +3,7 @@ layout: post
 title: window에서 Toast UI 컴포넌트 설치하기
 categories: [TUI]
 tags: [NHN ent]
-description: window에서 Toast UI 컴포넌트 설치하기
+description: window에서 Toast UI 컴포넌트 설치하고 기본 예제 해보기
 ---
 
 

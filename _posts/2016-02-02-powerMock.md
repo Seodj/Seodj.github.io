@@ -3,7 +3,7 @@ layout: post
 title: private method 테스트 방법!
 categories: [TDD]
 tags: [powermock]
-description: powerMock 소개
+description: powerMock 소개합니다.
 ---
 
 ## PowerMock

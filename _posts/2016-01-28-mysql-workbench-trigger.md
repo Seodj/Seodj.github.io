@@ -3,7 +3,7 @@ layout: post
 title: mysql workbench로 trigger 생성해보기
 categories: [Database]
 tags: [trigger]
-description: mysql workbench로 trigger 생성해보기
+description: mysql workbench를 이용하여 trigger 생성하는 방법에 대하여 소개합니다.
 ---
 
 

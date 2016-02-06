@@ -3,7 +3,7 @@ layout: post
 title: 기술교육 1주동안
 categories: [general]
 tags: [NHN ent]
-description: 기술교육 1주동안
+description: 기술교육 1주동안 느낀 점들
 ---
 
 ##루키햇님TF 5조

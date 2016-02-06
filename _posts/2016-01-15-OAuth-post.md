@@ -3,7 +3,7 @@ layout: post
 title: OAuth에 관하여
 categories: [OAuth]
 tags: [NHN ent]
-description: OAuth에 관하여
+description: OAuth에 관하여 정리합니다.
 ---
 
 ##1. OAuth
