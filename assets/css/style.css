@@ -184,3 +184,11 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+article.home h1 a, article.home h2 a, article.home h3 a, article.home h4 a{
+	font-family: -webkit-body;
+	color: black;
+}
+
+article.home h1 a:hover, article.home h2 a:hover, article.home h3 a:hover, article.home h4 a:hover{
+	color: skyblue;
+}
