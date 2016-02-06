@@ -73,7 +73,8 @@ $bower install tui-code-snippet
 
 ![calendar image]({{ site.BASE_PATH }}/assets/post/2016-01-15/calendar.jpg)
 
-## ※주의할 점은 github 설명에 CodeSnippet은 기본적으로 ne.util을 네임스페이스로 가진다고 했는데, ne.util이 아니라 tui.util로 변경된 것이 문서에는 적용이 되지 않았습니다. 밑에 ne.component.Calendar("#layer"); 가 아니라 tui.component로 작성해주세요!
+### ※주의할 점은 github 설명에 CodeSnippet은 기본적으로 ne.util을 네임스페이스로 가진다고 했는데, ne.util이 아니라 tui.util로 변경된 것이 문서에는 적용이 되지 않았습니다.
+아래 예제 처럼 ne.component.Calendar("#layer"); 가 아니라 tui.component로 작성해주세요!
 
 {% highlight yaml %}
 var calendar = new tui.component.Calendar("#layer");

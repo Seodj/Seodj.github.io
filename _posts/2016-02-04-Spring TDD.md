@@ -62,9 +62,9 @@ Service는 Controller에 의해 비지니스 로직을 수행합니다. 여러 D
 
 {% highlight yaml %}
 <testResources>
-	<testResource>
-		<directory>src/test/resources</directory>
-	</testResource>
+    <testResource>
+        <directory>src/test/resources</directory>
+    </testResource>
 </testResources>
 {% endhighlight %}
 
@@ -86,7 +86,7 @@ public class QuestionServiceTest {
 {% highlight yaml %}
 @RunWith(MockitoJUnitRunner.class)
 public class QuestionServiceTest {
-	@Mock
+    @Mock
     private QuestionDao questionDao;
 
     @Before
