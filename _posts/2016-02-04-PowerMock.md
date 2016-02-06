@@ -138,3 +138,16 @@ public class QuestionDaoTest {
         assertThat(questionDao.updateVoteNumDown(100), equalTo(0));
     }
 {% endhighlight %}
+
+Dao 테스트는 디비에서 select, update, insert 등 데이터가 바뀌게 되므로, 항상 테스트 이후에 rollback 설정을 걸어주는 것이 좋다.
+위에 코드와 같이 
+
+{% highlight ruby %}
+@Transactional
+@TransactionConfiguration(defaultRollback=true)
+public class QuestionDaoTest {
+    ...
+}
+{% endhighlight %}
+
+설정으로 테스트 후에 데이터가 변하지 않고 일관되게 유지해야 테스트 코드가 바뀌지 않는다.
