@@ -11,7 +11,7 @@ description: jekyll로 블로그 만들기!
 
 http://rubyinstaller.org/downloads/
 
-![ruby setup]({{ site.url }}/assets/ruby_setup.jpg)
+![ruby setup]({{ site.BASE_PATH }}/assets/post/2016-01-12/ruby_setup.jpg)
 
 위에 사진 처럼 Path 자동 설정하면 편합니다!
 
@@ -31,15 +31,15 @@ $ruby dk.rb install
 {% endhighlight %}
 
 
-![development error]({{ site.url }}/assets/development_error.jpg)
+![development error]({{ site.BASE_PATH }}/assets/post/2016-01-12/development_error.jpg)
 
 
 위에 문제 발생 시 루비 경로를 `config.yml` 파일에 추가해야 한다.(아래 사진 참조.)
  
 
- ![development_config]({{ site.url }}/assets/development_config.jpg)
+ ![development_config]({{ site.BASE_PATH }}/assets/post/2016-01-12/development_config.jpg)
 
- ![development_success]({{ site.url }}/assets/development_success.jpg)
+ ![development_success]({{ site.BASE_PATH }}/assets/post/2016-01-12/development_success.jpg)
  
 
 이러면 성공!
@@ -93,7 +93,7 @@ $pip install Pygments
 $jekyll serve 
 {% endhighlight %}
 
-![jekyll_serve]({{ site.url }}/assets/jekyll_serve.jpg)
+![jekyll_serve]({{ site.BASE_PATH }}/assets/post/2016-01-12/assets/jekyll_serve.jpg)
  
 Jekyll가 실행되지만 wdm 설치하라고 나옵니다.
 
@@ -143,7 +143,7 @@ highlighter: pygments
 
 다시 jekyll 실행
  
-![jekyll_error]({{ site.url }}/assets/jekyll_error.jpg)
+![jekyll_error]({{ site.BASE_PATH }}/assets/post/2016-01-12/jekyll_error.jpg)
 
 
 위에 오류 발생 시, 아래 명령어로 설치
@@ -152,7 +152,7 @@ highlighter: pygments
 $gem install pygments.rb
 {% endhighlight %}
 
-![jekyll_error2]({{ site.url }}/assets/jekyll_error2.jpg)
+![jekyll_error2]({{ site.BASE_PATH }}/assets/post/2016-01-12/jekyll_error2.jpg)
 
  
 위 에러 시 pygments를 재설치 해본다.
@@ -165,14 +165,14 @@ Pygments.rb 재설치 해보고 안된다면, 파이썬이 3.x 버전이어서 �
 http://127.0.0.1:4000/
 다음과 같이 나오면 성공
 
-![jekyll_success]({{ site.url }}/assets/jekyll_success.jpg)
+![jekyll_success]({{ site.BASE_PATH }}/assets/post/2016-01-12/jekyll_success.jpg)
 
 
 ##8. git 설치
 http://git-scm.com/download/win
 github에서 레퍼지토리 새로 생성
 
-![git_setup]({{ site.url }}/assets/git_setup.jpg)
+![git_setup]({{ site.BASE_PATH }}/assets/post/2016-01-12/git_setup.jpg)
 
 git 설치하고 본인이 만든 C:\jekyll\github아이디.github.io 디렉토리 이동 후,
 
