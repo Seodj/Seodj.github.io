@@ -93,7 +93,7 @@ $pip install Pygments
 $jekyll serve 
 {% endhighlight %}
 
-![jekyll_serve]({{ site.BASE_PATH }}/assets/post/2016-01-12/assets/jekyll_serve.jpg)
+![jekyll_serve]({{ site.BASE_PATH }}/assets/post/2016-01-12/jekyll_serve.jpg)
  
 Jekyll가 실행되지만 wdm 설치하라고 나옵니다.
 
