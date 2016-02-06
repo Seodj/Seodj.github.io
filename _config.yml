@@ -18,13 +18,13 @@ defaults:
 
 description: Stylish Jekyll Theme
 author:
-  name: 서동진
+  name: seodj
   email: seodj@nhnent.com
   github: seodj
   twitter: 
   pinterest: 
   linkedin: 
-  bio: be the best
+  bio: Be the best
   email_md5: 
 
 rss_path: feed.xml
