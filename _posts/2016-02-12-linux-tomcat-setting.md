@@ -43,7 +43,7 @@ $ ln -s apache-tomcat-8.0.32 tomcat
 $ vi ~/.bashrc
 {% endhighlight %}
 
-bashrc 파일을 수정하였으면 반드시, 아래 명령어를 실행시켜야 적용된다.
+<span style="color:#ff0000">bashrc 파일을 수정하였으면 반드시, 아래 명령어를 실행시켜야 적용된다.</span>
 
 {% highlight yaml %}
 $ source ~/.bashrc
@@ -59,7 +59,7 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-	    export APP_HOME=/home1/irteam
+        export APP_HOME=/home1/irteam
         export JAVA_HOME=${APP_HOME}/apps/jdk
         export APACHE_HTTP_HOME=${APP_HOME}/apps/apache
         export TOMCAT_HOME=${APP_HOME}/apps/tomcat
