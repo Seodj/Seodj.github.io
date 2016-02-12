@@ -112,6 +112,13 @@ JkMount /*.nhn tomcat
 </IfModule>
 {% endhighlight %}
 
+httpd.conf 파일을 모두 수정 한 뒤, 아파치/bin 폴더에서 아래 명령어를 수행한다.
+말 그대로 점잖은 재시작이다.
+
+{% highlight yaml %}
+$ ./apachectl graceful
+{% endhighlight %}
+
 현재는 :8080 포트에서만 톰캣에서 처리하는데, 80포트에서 톰캣을 처리하게 바꾸어주어야 한다.
 
 톰캣에 있는 server.xml 포트와 apache/conf/workers.properties 파일에 worker.tomcat.port 를 같게 해주면 80포트로 request를 날려도 톰캣으로 처리한다.
