@@ -59,7 +59,7 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-		export APP_HOME=/home1/irteam
+	    export APP_HOME=/home1/irteam
         export JAVA_HOME=${APP_HOME}/apps/jdk
         export APACHE_HTTP_HOME=${APP_HOME}/apps/apache
         export TOMCAT_HOME=${APP_HOME}/apps/tomcat

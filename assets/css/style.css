@@ -200,4 +200,5 @@ article.home h1 a:hover, article.home h2 a:hover, article.home h3 a:hover, artic
 
 .highlight .err{
 	color: navy;
+	background-color: #f5f5f5;
 }
