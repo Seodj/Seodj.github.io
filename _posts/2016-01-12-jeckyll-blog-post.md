@@ -7,7 +7,7 @@ description: jekyll 만드는 방법에 대해서 처음부터 상세하게 소�
 ---
 
 
-##1. 루비 설치!
+## 1. 루비 설치!
 
 http://rubyinstaller.org/downloads/
 
@@ -17,7 +17,7 @@ http://rubyinstaller.org/downloads/
 
 
 
-##2. development kit 설치
+## 2. development kit 설치
 
 http://rubyinstaller.org/downloads/  
 편한 위치에 설치 후, 층로 디렉토리 이동
@@ -46,7 +46,7 @@ $ruby dk.rb install
 
 
 
-##3. 지킬 설치
+## 3. 지킬 설치
 
 {% highlight yaml %}
 $gem install jekyll
@@ -61,7 +61,7 @@ $gem install rouge
 로우지 설치 완료!
 
 
-##4. 파이썬 설치
+## 4. 파이썬 설치
 https://www.python.org/downloads/  
 파이썬은 2.x 버전을 추천합니다. 3.x는 뒤에서 에러발생..
 
@@ -79,14 +79,14 @@ $python
 Pip는 파이썬 설치할 때 자동으로 설치됨  
 
 
-##5. Pygments 설치  
+## 5. Pygments 설치  
 {% highlight yaml %}
 $pip install Pygments
 {% endhighlight %}
 윈도우 계정이 한글로 되어있으면 오류 발생할 수 있습니다.  
 
 
-##6. Jekyll 실행
+## 6. Jekyll 실행
 원하는 디렉토리 하나 생성 후
 
 {% highlight yaml %}
@@ -131,7 +131,7 @@ Hitimes 삭제 후 다시 설치
 
 
 
-##7. jekyll 블로그 생성하기
+## 7. jekyll 블로그 생성하기
 $jekyll new github아이디.github.io
 Blog 디렉토리로 이동 후, _config.yml 파일에 밑에 설정 추가
 
@@ -168,7 +168,7 @@ http://127.0.0.1:4000/
 ![jekyll_success]({{ site.BASE_PATH }}/assets/post/2016-01-12/jekyll_success.jpg)
 
 
-##8. git 설치
+## 8. git 설치
 http://git-scm.com/download/win
 github에서 레퍼지토리 새로 생성
 
@@ -190,7 +190,7 @@ $git push –u origin master
 https://본인아이디.github.io 입력해서 정상적으로 나오면 성공!
 
 
-##9. 블로그 꾸미기
+## 9. 블로그 꾸미기
 
 http://jekyllthemes.org/
 에서 무료 themes를 배포하니 여기서 다운받아서 적용하면 됩니다!

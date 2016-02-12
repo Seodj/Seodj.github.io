@@ -6,7 +6,7 @@ tags: [NHN ent]
 description: OAuth에 관하여 정리합니다.
 ---
 
-##1. OAuth
+## 1. OAuth
 
 1. Authentication
 - 인증
@@ -17,7 +17,7 @@ description: OAuth에 관하여 정리합니다.
 OAuth는 2번인 권한 부여 의미 조금 더 맞다.
 
 
-##2. 용어 정리
+## 2. 용어 정리
 
 1. Resource Server
 - 자원을 제공하는 서버. Client는 Access token을 이용하여 자원에 접근할 수 있다. (ex.페이스북,사진,비디오 등)

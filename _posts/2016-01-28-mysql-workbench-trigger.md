@@ -7,7 +7,7 @@ description: mysql workbench를 이용하여 trigger 생성하는 방법에 대�
 ---
 
 
-##1. trigger란?
+## 1. trigger란?
 
 trigger 단어는 방아쇠라는 뜻을 가진다.
 
@@ -19,7 +19,7 @@ trigger 단어는 방아쇠라는 뜻을 가진다.
 테이블에 대한 이벤트에 따라 원하는 작업을 추가할 수 있다!
 
 
-##2. workbench에서 trigger 추가하기
+## 2. workbench에서 trigger 추가하기
 
 ![trigger image]({{ site.BASE_PATH }}/assets/post/2016-01-28/trigger.jpg)
 

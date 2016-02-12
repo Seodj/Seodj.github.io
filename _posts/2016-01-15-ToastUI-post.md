@@ -7,7 +7,7 @@ description: window에서 Toast UI 컴포넌트 설치하고 기본 예제 해�
 ---
 
 
-##1. node.js 설치!
+## 1. node.js 설치!
 
 https://nodejs.org/ 
 
@@ -18,7 +18,7 @@ $node -v
 cmd창에 $node 명령어가 실행되면 설치 완료.
 
 
-##2. bower 설치
+## 2. bower 설치
 
 {% highlight yaml %}
 $npm i --global bower
@@ -33,7 +33,7 @@ $bower -v
 cmd창에 $bower 명령어가 실행되면 설치 완료.
 
 
-##3. Toast UI 컴포넌트 설치
+## 3. Toast UI 컴포넌트 설치
 
 https://github.com/nhnent/tui.code-snippet
 
@@ -48,7 +48,7 @@ $bower install tui-code-snippet
 원하는 디렉토리로 이동하여 위에서 cmd 명령어 실행한다.
 
 
-##4. 적용 테스트
+## 4. 적용 테스트
 
 {% highlight yaml %}
 <!DOCTYPE html>
