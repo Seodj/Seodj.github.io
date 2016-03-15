@@ -1,3 +1,11 @@
+---
+layout: post
+title: linux 톰캣, jdk설치 및 포트 설정
+categories: [apache,server]
+tags: [linux, server, tomcat]
+description: linux 톰캣, jdk설치 및 포트 설정.
+---
+
 ## LOGBack
 LOGBack은 Ceki Gülcü 개발자가 SLF4J 아키텍쳐 기반으로 만들었다고 합니다.
 LOGBack이 좋은 점은 <span style="color:#ff0000">성능 10배 향상, 메모리 점유율 낮아짐, 자동 삭제</span> 등등 아래 링크에 자세하게 설명되어 있습니다.
