@@ -1,9 +1,9 @@
 ---
 layout: post
-title: linux 톰캣, jdk설치 및 포트 설정
-categories: [apache,server]
-tags: [linux, server, tomcat]
-description: linux 톰캣, jdk설치 및 포트 설정.
+title: LOGBack 설정
+categories: [log]
+tags: [log, logback]
+description: LOGBack 설정
 ---
 
 ## LOGBack
