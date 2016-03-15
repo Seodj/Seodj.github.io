@@ -10,7 +10,9 @@ description: LOGBack 설정
 LOGBack은 Ceki Gülcü 개발자가 SLF4J 아키텍쳐 기반으로 만들었다고 합니다.
 LOGBack이 좋은 점은 <span style="color:#ff0000">성능 10배 향상, 메모리 점유율 낮아짐, 자동 삭제</span> 등등 아래 링크에 자세하게 설명되어 있습니다.
 
-`` https://beyondj2ee.wordpress.com/2012/11/09/logback-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-reasons-to-prefer-logback-over-log4j/ ``
+{% highlight yaml %}
+https://beyondj2ee.wordpress.com/2012/11/09/logback-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-reasons-to-prefer-logback-over-log4j/
+{% endhighlight %}
 
 간단하게 LOGBack을 적용하는 방법만 소개하겠습니다.
 
@@ -79,7 +81,7 @@ timestamp 태그 년월일 데이터를 받아 파일 이름에 추가하기 위
     </appender>
 ```
 appender name이 "file"을 설정하면, 파일 생성, "console"을 입력하면 콘솔에 찍는것입니다.
-<file>태그안에 폴더와 파일이름을 적습니다.
+file 태그 안에 폴더와 파일이름을 적습니다.
 여기서 디렉토리 위치는 원하시는대로 적으면 되는데 위와 같이 아무것도 적지 않을 경우 C드라이브에 logs 폴더가 생성되었고,
 ${user.home}을 적으면, C:\Users\NHNENT.AD0 에 폴더가 생성되었습니다.
 
