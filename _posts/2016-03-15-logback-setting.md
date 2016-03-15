@@ -85,6 +85,9 @@ timestamp 태그 년월일 데이터를 받아 파일 이름에 추가하기 위
 ```
 
 appender name이 "file"을 설정하면, 파일 생성, "console"을 입력하면 콘솔에 찍는것입니다.
+
+
+### 3. 로그 파일 디렉토리
 file 태그 안에 폴더와 파일이름을 적습니다.
 여기서 디렉토리 위치는 원하시는대로 적으면 되는데 위와 같이 아무것도 적지 않을 경우 C드라이브에 logs 폴더가 생성되었고,
 ${user.home}을 적으면, C:\Users\NHNENT.AD0 에 폴더가 생성되었습니다.
@@ -101,11 +104,15 @@ file 생성 위치에 ${USER.HOME}을 대문자로 입력했을때는 위치를 
 <maxHistory>3</maxHistory>
 ```
 
+### 4. maxHistory
+
 maxHistory 태그는 로그 파일을 삭제하는 기준을 설정합니다.
 <span style="color:#ff0000">문제는 이 숫자가 요일인지 월인지 기준이 확실하지 않습니다. </span>
 
 LOGBack 홈페이지 메뉴얼에 다음과 같은 정보가 있었습니다.
 ![logback_maxhistory]({{ site.BASE_PATH }}/assets/post/2016-03-15/logback_maxhistory.png)
+
+<br>
 
 6이란 숫자로 set하면 6month라고 적혀있어서 월 기준인가 싶었는데, 조금 밑으로 내려가니
 ![logback_maxhistory_example]({{ site.BASE_PATH }}/assets/post/2016-03-15/logback_maxhistory_example.png)
