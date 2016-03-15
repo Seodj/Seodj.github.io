@@ -18,6 +18,7 @@ https://beyondj2ee.wordpress.com/2012/11/09/logback-%EC%82%AC%EC%9A%A9%ED%95%B4%
 
 ### 1. pom.xml에 dependency 추가!
 sl4j는 이미 dependency 설정이 되어있기 때문에 패스.
+
 ``` xml
         <!-- logback -->
         <dependency>
@@ -139,6 +140,7 @@ logger.info("hello");
 
 ### 추가로 서버에 올릴때, 파일 path 잡는 법입니다. 파일태그에 ${HOME}을 적어주시면, irteam 위치입니다. 
 아래 예제 참고하세요!
+
 ``` xml
 <file>${HOME}/apps/logs/oneq-${byDay}.log</file>
 ```
