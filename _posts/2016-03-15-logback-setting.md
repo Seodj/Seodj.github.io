@@ -62,9 +62,11 @@ sl4j는 이미 dependency 설정이 되어있기 때문에 패스.
 ```
 저는 기존에 있던 log4j.xml 파일을 삭제하고 새롭게 생성하였습니다.
 위에 코드에서 필요한 것만 간단하게 설명하자면,
+
 ``` xml
 <timestamp key="byDay" datePattern="yyyyMMdd"/>
 ```
+
 timestamp 태그 년월일 데이터를 받아 파일 이름에 추가하기 위함입니다.
 
 ``` xml
@@ -81,6 +83,7 @@ timestamp 태그 년월일 데이터를 받아 파일 이름에 추가하기 위
         </encoder>
     </appender>
 ```
+
 appender name이 "file"을 설정하면, 파일 생성, "console"을 입력하면 콘솔에 찍는것입니다.
 file 태그 안에 폴더와 파일이름을 적습니다.
 여기서 디렉토리 위치는 원하시는대로 적으면 되는데 위와 같이 아무것도 적지 않을 경우 C드라이브에 logs 폴더가 생성되었고,
@@ -97,6 +100,7 @@ file 생성 위치에 ${USER.HOME}을 대문자로 입력했을때는 위치를 
 ``` xml
 <maxHistory>3</maxHistory>
 ```
+
 maxHistory 태그는 로그 파일을 삭제하는 기준을 설정합니다.
 <span style="color:#ff0000">문제는 이 숫자가 요일인지 월인지 기준이 확실하지 않습니다. </span>
 
