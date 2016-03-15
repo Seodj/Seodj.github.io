@@ -6,7 +6,7 @@ tags: [log, logback]
 description: LOGBack 설정
 ---
 
-## LOGBack
+# LOGBack
 LOGBack은 Ceki Gülcü 개발자가 SLF4J 아키텍쳐 기반으로 만들었다고 합니다.
 LOGBack이 좋은 점은 <span style="color:#ff0000">성능 10배 향상, 메모리 점유율 낮아짐, 자동 삭제</span> 등등 아래 링크에 자세하게 설명되어 있습니다.
 
@@ -16,7 +16,7 @@ https://beyondj2ee.wordpress.com/2012/11/09/logback-%EC%82%AC%EC%9A%A9%ED%95%B4%
 
 간단하게 LOGBack을 적용하는 방법만 소개하겠습니다.
 
-### 1. pom.xml에 dependency 추가!
+## 1. pom.xml에 dependency 추가!
 sl4j는 이미 dependency 설정이 되어있기 때문에 패스.
 
 ``` xml
@@ -33,7 +33,7 @@ sl4j는 이미 dependency 설정이 되어있기 때문에 패스.
          </dependency>
 ```
 
-### 2. logback.xml 설정
+## 2. logback.xml 설정
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
@@ -87,7 +87,7 @@ timestamp 태그 년월일 데이터를 받아 파일 이름에 추가하기 위
 appender name이 "file"을 설정하면, 파일 생성, "console"을 입력하면 콘솔에 찍는것입니다.
 
 
-### 3. 로그 파일 디렉토리
+## 3. 로그 파일 디렉토리
 file 태그 안에 폴더와 파일이름을 적습니다.
 여기서 디렉토리 위치는 원하시는대로 적으면 되는데 위와 같이 아무것도 적지 않을 경우 C드라이브에 logs 폴더가 생성되었고,
 ${user.home}을 적으면, C:\Users\NHNENT.AD0 에 폴더가 생성되었습니다.
@@ -104,7 +104,7 @@ file 생성 위치에 ${USER.HOME}을 대문자로 입력했을때는 위치를 
 <maxHistory>3</maxHistory>
 ```
 
-### 4. maxHistory
+## 4. maxHistory
 
 maxHistory 태그는 로그 파일을 삭제하는 기준을 설정합니다.
 <span style="color:#ff0000">문제는 이 숫자가 요일인지 월인지 기준이 확실하지 않습니다. </span>
@@ -135,7 +135,7 @@ LOGBack 홈페이지 메뉴얼에 다음과 같은 정보가 있었습니다.
 TRACE, DEBUG , INFO, WARN, ERROR
 위에 설정은 INFO로 설정해두었기 때문에, TRACE, BEBUG 레벨을 로그에 찍히지 않습니다.
 
-### 3. 적용하기
+## 5. 적용하기
 이제 설정은 모두 끝났고 아래 처럼 로그를 선언하고 사용하면 됩니다.
 ``` java
 import org.slf4j.Logger;
