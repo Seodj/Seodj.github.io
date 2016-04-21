@@ -3,7 +3,7 @@ layout: post
 title: LOGBack 설정
 categories: [log]
 tags: [log, logback]
-description: LOGBack 설정
+description: LogBack 설정
 ---
 
 # LOGBack
