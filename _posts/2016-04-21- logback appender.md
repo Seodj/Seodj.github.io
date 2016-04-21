@@ -12,13 +12,16 @@ description: LogBack 서로 다른 appender로 분리하기.
 한 클래스 파일에서 서로 다른 appender을 쓰고 싶을 경우가 있다. 이때, 적용할 수 있는 방법을 소개한다.
 
 1. 로그를 찍는 Class
+
 ``` java
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 private static final Logger doorayLogger = LoggerFactory.getLogger(A클래스.class);
 ```
 
 2. logback 설정
+
 ``` xml
 <appender name="BODYFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
 <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
@@ -48,7 +51,7 @@ private static final Logger doorayLogger = LoggerFactory.getLogger(A클래스.cl
 additivity="false" 설정을 하게 되면 해당 클래스의 상위 logger에는 찍히지 않게 된다.
 
 예를 들어, 한 클래스 안에 log, bodyLogger 2개의 인스턴스가 있다고 해보자.
-log는 logger의 위치가 해당 패키지이기 때문에 어떤 그 패키지 안에 로그를 직게 되면 모두 찍히게 된다. 
+log는 logger의 위치가 해당 패키지이기 때문에 어떤 그 패키지 안에 로그를 직게 되면 모두 찍히게 된다.
 
 bodyLogger.error("bodyLogger 에러입니다."); 라고 호출 했을 경우에도, log에 찍히게 된다.
 하지만 additivity="false"를 bodyLogger 설정에 주게 되면, bodyLogger에서 찍은 로그는 bodyLogger의 appender에만 찍히게 된다.
