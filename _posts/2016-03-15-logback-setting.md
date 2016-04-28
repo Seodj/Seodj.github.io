@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LOGBack 설정
+title: LogBack 설정
 categories: [log]
 tags: [log, logback]
 description: LogBack 설정
@@ -57,7 +57,7 @@ sl4j는 이미 dependency 설정이 되어있기 때문에 패스.
         <appender-ref ref="console" />
         <appender-ref ref="file" />
     </root>
-        
+
 </configuration>
 ```
 저는 기존에 있던 log4j.xml 파일을 삭제하고 새롭게 생성하였습니다.
@@ -149,7 +149,7 @@ logger.info("hello");
 컨트롤러에 코드를 적고 테스트 했을 때, 콘솔과 파일에 잘 찍히는 것을 확인할 수 있습니다. 부족한 점은 추가해주세요!
 감사합니다.
 
-### 추가로 서버에 올릴때, 파일 path 잡는 법입니다. 파일태그에 ${HOME}을 적어주시면, irteam 위치입니다. 
+### 추가로 서버에 올릴때, 파일 path 잡는 법입니다. 파일태그에 ${HOME}을 적어주시면, irteam 위치입니다.
 아래 예제 참고하세요!
 
 ``` xml

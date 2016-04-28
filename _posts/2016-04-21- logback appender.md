@@ -24,24 +24,24 @@ private static final Logger doorayLogger = LoggerFactory.getLogger(A클래스.cl
 
 ``` xml
 <appender name="BODYFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-<!-- daily rollover -->
-<file>/home1/irteam/logs/api-body-%d{yyyy-MM-dd}.log</file>
-<fileNamePattern>/home1/irteam/logs/api-body.log.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
-<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-<maxFileSize>100MB</maxFileSize>
-</timeBasedFileNamingAndTriggeringPolicy>
-<!-- keep 180 days' worth of history -->
-<maxHistory>180</maxHistory>
-</rollingPolicy>
+  <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+    <!-- daily rollover -->
+    <file>/home1/irteam/logs/api-body-%d{yyyy-MM-dd}.log</file>
+    <fileNamePattern>/home1/irteam/logs/api-body.log.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+    <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+    <maxFileSize>100MB</maxFileSize>
+    </timeBasedFileNamingAndTriggeringPolicy>
+    <!-- keep 180 days' worth of history -->
+    <maxHistory>180</maxHistory>
+  </rollingPolicy>
 <encoder>
-<charset>UTF-8</charset>
-<pattern>%d{HH:mm:ss.SSS} - %msg%n</pattern>
-</encoder>
+  <charset>UTF-8</charset>
+  <pattern>%d{HH:mm:ss.SSS} - %msg%n</pattern>
+  </encoder>
 </appender>
 
 <logger name="com.nhnent.asdf.asd.as.A클래스" level="info" additivity="false">
-<appender-ref ref="BODYFILE" />
+  <appender-ref ref="BODYFILE" />
 </logger>
 ```
 
