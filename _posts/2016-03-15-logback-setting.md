@@ -6,15 +6,15 @@ tags: [log, logback]
 description: LogBack 설정
 ---
 
-# LOGBack
-LOGBack은 Ceki Gülcü 개발자가 SLF4J 아키텍쳐 기반으로 만들었다고 합니다.
-LOGBack이 좋은 점은 <span style="color:#ff0000">성능 10배 향상, 메모리 점유율 낮아짐, 자동 삭제</span> 등등 아래 링크에 자세하게 설명되어 있습니다.
+# LogBack
+LogBack은 Ceki Gülcü 개발자가 SLF4J 아키텍쳐 기반으로 만들었다고 합니다.
+LogBack이 좋은 점은 <span style="color:#ff0000">성능 10배 향상, 메모리 점유율 낮아짐, 자동 삭제</span> 등등 아래 링크에 자세하게 설명되어 있습니다.
 
 {% highlight yaml %}
 https://beyondj2ee.wordpress.com/2012/11/09/logback-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-reasons-to-prefer-logback-over-log4j/
 {% endhighlight %}
 
-간단하게 LOGBack을 적용하는 방법만 소개하겠습니다.
+간단하게 LogBack을 적용하는 방법만 소개하겠습니다.
 
 ## 1. pom.xml에 dependency 추가!
 sl4j는 이미 dependency 설정이 되어있기 때문에 패스.
@@ -109,7 +109,7 @@ file 생성 위치에 ${USER.HOME}을 대문자로 입력했을때는 위치를 
 maxHistory 태그는 로그 파일을 삭제하는 기준을 설정합니다.
 <span style="color:#ff0000">문제는 이 숫자가 요일인지 월인지 기준이 확실하지 않습니다. </span>
 
-LOGBack 홈페이지 메뉴얼에 다음과 같은 정보가 있었습니다.
+LogBack 홈페이지 메뉴얼에 다음과 같은 정보가 있었습니다.
 ![logback_maxhistory]({{ site.BASE_PATH }}/assets/post/2016-03-15/logback_maxhistory.png)
 
 <br>
@@ -131,7 +131,7 @@ LOGBack 홈페이지 메뉴얼에 다음과 같은 정보가 있었습니다.
         <appender-ref ref="file" />
     </root>
 ```
-이건 로그 레벨을 설정하는 것인데, LOGBack은 5가지 레벨로 이루어져있습니다.
+이건 로그 레벨을 설정하는 것인데, LogBack은 5가지 레벨로 이루어져있습니다.
 TRACE, DEBUG , INFO, WARN, ERROR
 위에 설정은 INFO로 설정해두었기 때문에, TRACE, BEBUG 레벨을 로그에 찍히지 않습니다.
 
